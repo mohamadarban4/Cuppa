@@ -1,0 +1,759 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 3vw;
+    background-color: #ffffff;
+    transition: 0.6s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 30px;
+    background: transparent;
+}
+
+.logo h1 {
+    font-size: 30px;
+    font-family: "gilroy";
+    color: rgb(107, 142, 35);
+}
+
+.navtitle ul li {
+    font-size: 15px;
+    width: 30%;
+    font-family: sans-serif;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navtitle a:hover {
+    color: rgb(107, 142, 35);
+    background-color: #ffffff;
+}
+
+.navtitle a {
+    text-decoration: none;
+    color: inherit;
+    padding: 6px 8px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#page1 {
+    height: 90vh;
+    width: 100%;
+}
+
+#homecontent {
+    padding: 15vw 14vw;
+}
+
+#homecontent h1 {
+    font-size: 105px;
+    font-family: sans-serif "lato";
+    font-family: "gilroy";
+    text-transform: uppercase;
+    color: rgb(107, 142, 35);
+}
+
+#homecontent p {
+    width: 50%;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 1.5vw 0;
+    letter-spacing: .5px;
+    font-style: oblique;
+}
+
+button {
+    font-family: 'gilroy';
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 12px 24px;
+    background-color: rgb(107, 142, 35);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-top: 15px;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page2 h1 {
+    font-size: 80px;
+    font-family: 'gilroy';
+    padding: 18vw 14vw;
+    color: #f7f7f7;
+    z-index: -9;
+}
+
+#video-container video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    top: 0;
+    left: 0;
+    z-index: -9;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    color: rgb(107, 142, 35);
+    /* background-color: red; */
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.text h1 {
+    font-size: 80px;
+    font-family: 'gilroy';
+    padding-top: 10vw;
+}
+
+.text p {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 3vw 5vw;
+    letter-spacing: .5px;
+}
+
+.tea-var {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'gilroy';
+}
+
+.teaimg {
+    width: 200px;
+    background: transparent;
+}
+
+.tea-var h4 {
+    font-size: 20px;
+    padding: 2vw;
+}
+
+.tea-var h3 {
+    color: black;
+    font-size: 20px;
+}
+
+.t1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.t2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.t3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.t4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page4 {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+}
+
+#page4 .pleft {
+    height: 100%;
+    width: 75%;
+    padding: 3vw 5vw;
+    background-color: rgb(107, 142, 35);
+    color: #f7f7f7;
+}
+
+.pleft h1 {
+    font-family: 'gilroy';
+    font-size: 70px;
+    text-align: center;
+}
+
+.pleft p {
+    font-family: 'gilroy';
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 2vw;
+}
+
+.pright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 10vw;
+}
+
+.pright h1 {
+    font-size: 100px;
+    font-family: 'gilroy';
+    color: rgb(107, 142, 35);
+}
+
+.magnetic-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: rgb(107, 142, 35);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#page5 {
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 2vw 3vw;
+}
+
+.timg {
+    height: 100%;
+    width: 100%;
+}
+
+.timg img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#page6 {
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 5vw 1.5vw;
+    font-family: "gilroy";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(107, 142, 35);
+}
+
+.cuplogo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 90px;
+    align-items: center;
+    text-align: center;
+}
+
+.cuplogo h1 {
+    font-size: 24px;
+}
+
+#teaimg img {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social h2 {
+    padding-bottom: 13px;
+    font-size: 25px;
+}
+
+.add h4 {
+    font-size: 20px;
+}
+
+.hero {
+    padding: 1vw 1vw;
+}
+
+.bloghead {
+    padding: 15vw 0;
+}
+
+.bloghead h1 {
+    font-size: 35px;
+    font-family: "gilroy";
+    color: rgb(107, 142, 35);
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+#bh1 {
+    font-size: 60px;
+}
+
+.blog1 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 3vw;
+    /* background-color: red; */
+    font-family: "gilroy";
+    /* position: relative; */
+}
+
+.b1left {
+    padding: 4vw 3vw;
+    background-color: rgb(107, 142, 35);
+    width: 65%;
+    height: 80%;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.b1left h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.b1left p {
+    font-size: 20px;
+    color: white;
+}
+
+.b1right {
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.b1right img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.blog2 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 3vw;
+    /* background-color: red; */
+    font-family: "gilroy";
+    /* position: relative; */
+}
+
+.b2left {
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.b2left img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.b2right {
+    padding: 4vw 3vw;
+    background-color: rgb(107, 142, 35);
+    width: 65%;
+    height: 80%;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.b2right h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.b2right p {
+    font-size: 20px;
+    color: white;
+}
+
+.blog3 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 3vw;
+    /* background-color: red; */
+    font-family: "gilroy";
+    /* position: relative; */
+}
+
+.b3left {
+    padding: 4vw 3vw;
+    background-color: rgb(107, 142, 35);
+    width: 65%;
+    height: 80%;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+.b3left h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.b3left p {
+    font-size: 20px;
+    color: white;
+}
+
+.b3right {
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.b3right img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.blog4 {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 3vw;
+    /* background-color: red; */
+    font-family: "gilroy";
+    /* position: relative; */
+}
+
+.b4left {
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.b4left img {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.b4right {
+    padding: 4vw 3vw;
+    background-color: rgb(107, 142, 35);
+    width: 65%;
+    height: 80%;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.b4right h1 {
+    font-size: 40px;
+    color: white;
+}
+
+.b4right p {
+    font-size: 20px;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 10vw 0;
+    font-family: "gilroy";
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact form styles */
+.contact-form {
+    padding: 10vw 0;
+    margin: 0 10px;
+    font-family: "gilroy";
+}
+
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(107, 142, 35);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    color: rgb(107, 142, 35);
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-container input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgb(107, 142, 35);
+    font-family: "gilroy";
+    color: white;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-family: "gilroy";
+}
+
+/* Hamburger styles */
+.hamburger {
+    display: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* hhyur   du tdfhjgjjh */
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 10vw 10vw;
+    margin-bottom: 10px;
+    font-family: "gilroy";
+}
+
+.cart-header {
+    border-bottom: 1px solid #ddd;
+    padding-top: 2vw;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.cart-header h4 {
+    font-size: 30px;
+    color: rgb(107, 142, 35);
+}
+
+.product-details {
+    font-weight: 500;
+    padding-top: 2vw;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 1vw;
+    font-weight: 600;
+}
+
+.counter button {
+    padding: 5px;
+}
+
+.counter span {
+    margin: 0 10px;
+}
+
+.price-section {
+    /* Styling for price section */
+    font-size: 22px;
+    color: #333;
+    margin-top: 25px;
+    /* Додано відступ зверху для кращого розташування */
+}
+
+.price-section p {
+    font-weight: 600;
+}
+
+.checkout-section {
+    border-top: 1px solid #ddd;
+    padding: 20vw 10vw;
+    font-family: "gilroy";
+    color: rgb(107, 142, 35);
+
+}
+
+.checkout-section h1 {
+    font-size: 50px;
+    padding-bottom: 17px;
+}
+
+.checkout-section p {
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.checkout-section button {
+    padding: 10px 20px;
+    background-color: rgb(107, 142, 35);
+    /* Зелений колір, можна змінити */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.carting {
+    display: flex;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-menu {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        display: none;
+    }
+
+    #nav-menu.active {
+        display: block;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
